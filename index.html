@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>我的第一页</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<header>
+    <h1>小明</h1>
+    <p>正在从 0 到 1 学做网页。</p>
+</header>
+
+<main>
+    <section>
+        <h2>关于我</h2>
+        <p>住在杭州，白天上班，晚上写代码。</p>
+        <img src="./images/avatar.jpg" alt="我的头像" />
+    </section>
+
+    <section>
+        <h2>我会什么</h2>
+        <ul>
+            <li>HTML 结构</li>
+            <li>正在学 CSS</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>联系我</h2>
+        <p><a href="mailto:hi@example.com">hi@example.com</a></p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="name">姓名</label>
+                <input id="name" name="name" type="text" placeholder="怎么称呼你" required />
+            </p>
+
+            <p>
+                <label for="email">邮箱</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </p>
+
+            <p>
+                <label for="message">留言</label>
+                <textarea id="message" name="message" rows="4" placeholder="想说什么"></textarea>
+            </p>
+
+            <button type="submit">发送</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 小明</p>
+</footer>
+</body>
+</html>

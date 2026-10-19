@@ -1,0 +1,9 @@
+body {
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: #f5f1e8;
+    color: #16150f;
+    font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.8;
+}
