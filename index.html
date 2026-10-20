@@ -16,15 +16,23 @@
     <section>
         <h2>关于我</h2>
         <p>住在杭州，白天上班，晚上写代码。</p>
-        <img src="./images/avatar.jpg" alt="我的头像" />
+        <img src="./images/img.png" alt="我的头像" />
     </section>
 
     <section>
         <h2>我会什么</h2>
-        <ul>
-            <li>HTML 结构</li>
-            <li>正在学 CSS</li>
-        </ul>
+        <ul></ul>
+        <form id="skill-form">
+            <input id="skill-input" type="text" placeholder="加一项技能" autocomplete="off" />
+            <button type="submit">添加</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>最近动态</h2>
+        <p id="feed-status">加载中…</p>
+        <ul id="feed"></ul>
+        <button id="feed-retry" type="button" hidden>重试</button>
     </section>
 
     <section>
@@ -55,5 +63,6 @@
 <footer>
     <p>© 2026 小明</p>
 </footer>
+<script src="./app.js"></script>
 </body>
 </html>
