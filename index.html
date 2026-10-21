@@ -10,6 +10,11 @@
 <header>
     <h1>小明</h1>
     <p>正在从 0 到 1 学做网页。</p>
+    <div id="admin-bar">
+        <label for="admin-key">管理员密钥</label>
+        <input id="admin-key" type="password" placeholder="发布和删除需要它" autocomplete="off" />
+        <span id="admin-state"></span>
+    </div>
 </header>
 
 <main>
@@ -32,6 +37,10 @@
         <h2>最近动态</h2>
         <p id="feed-status">加载中…</p>
         <ul id="feed"></ul>
+        <form id="feed-form">
+            <input id="feed-input" type="text" placeholder="写一条新动态" autocomplete="off" />
+            <button type="submit">发布</button>
+        </form>
         <button id="feed-retry" type="button" hidden>重试</button>
     </section>
 
@@ -57,6 +66,7 @@
 
             <button type="submit">发送</button>
         </form>
+        <p id="contact-status"></p>
     </section>
 </main>
 

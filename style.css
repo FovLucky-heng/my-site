@@ -154,3 +154,36 @@ li button {
 li button:hover {
     color: #c2410c;
 }
+/* 管理员密钥栏 */
+#admin-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #6d6858;
+}
+
+#admin-key {
+    flex: 1;
+    max-width: 200px;
+    padding: 6px 8px;
+    border: 1px solid #c9c0a9;
+    background: #fff;
+    font: inherit;
+    font-size: 14px;
+}
+
+#admin-state {
+    color: #c2410c;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    #admin-bar {
+        flex-wrap: wrap;
+    }
+    #admin-key {
+        max-width: none;
+    }
+}
