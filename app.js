@@ -1,8 +1,13 @@
 // 1. 先证明 JS 在跑
 console.log('JS 跑起来了');
 
-// 后端地址：只在这里写一次。上线时改成你的域名即可
-const API = 'http://localhost:3000';
+// 后端地址：
+// - 本地开发（localhost）用本机的 3000 端口
+// - 线上（GitHub Pages）用 Render 的地址
+const IS_LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+const API = IS_LOCAL
+    ? 'http://localhost:3000'
+    : 'https://learn-api-9i99.onrender.com';
 
 // 管理员密钥：存在本机浏览器里，请求时放进请求头 x-api-key
 const keyInput = document.querySelector('#admin-key');
